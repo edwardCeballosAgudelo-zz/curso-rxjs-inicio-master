@@ -12,7 +12,7 @@ const intervalo$ = new Observable <number>( subscriber => {
   let interval = setInterval(() => {
     // cada segundo
     contador++;
-    subscriber.next( contador )
+    subscriber.next( contador );
     console.log( contador );
   }, 1000);
 
